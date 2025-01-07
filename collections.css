@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.collection-nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 8px;
+    z-index: 99;
+    height: 50px;
+    width: 99%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.collection-nav h1{
+    color: rgb(5, 38, 92);
+}
+.col-nav-list{
+    column-gap: 20px;
+    padding: 3px;
+}
+.col-nav-list a{
+    text-decoration: none;
+    color: rgb(5, 38, 92);
+}
+.container{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    text-align: center;
+    width: 400px;
+    height: auto;
+    padding: 20px;
+    margin-left: 35%;
+    margin-top: 10px;
+}
+.category-div{
+    justify-content: center; 
+    border: solid 2px;
+    margin: 5px;
+}
+.category-div p{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.category-div img{
+    width: 200px;
+    height: 250px;
+    border-bottom: solid 2px;
+}
+.category-head{
+    margin: 10px;
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(5, 38, 92);
+}
+.discount{
+    margin-left: 10px;
+    padding: 5px;
+}
+.offers{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.offer-1{
+    border: solid 2px black;
+    padding: 20px;
+    padding-top: 20px;
+    margin: 5px;
+    margin-left: 10px;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+}
+.party-icon{
+    font-size: 45px;
+    animation: popup 1s infinite;
+}
+.slide-image{
+    width: 450px;
+    height: 500px;
+    left: 30%;
+    position: relative;
+    overflow: hidden;
+    border: transparent;
+}
+.slide-image img{
+    width: fit-content;
+    height: 100%;
+    margin: 20px;
+    margin-left: 50px;
+    margin-top: 15px;
+    padding: 15px;
+    object-fit: cover;
+    transition: opacity 1s ease;
+    position: absolute;
+}
+.slide-image img.active{
+    opacity: 1;
+    position: relative;
+}
+.slide-image-head{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 50px;
+}
+
+
+
+@keyframes popup{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 600px){
+    .col-nav-list{
+        display: none;
+    }
+    .collection-nav{
+        width: 100%;
+    }
+    .container{
+        margin-left: 20px;
+        width: 400px;
+    }
+    .offer-1{
+        height: 180px;
+        width: 400px;
+    }
+    .slide-image{
+        left: 0;
+    }
+}
