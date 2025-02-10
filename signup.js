@@ -6,7 +6,7 @@ signupButton.addEventListener('click', function(){
     password= document.getElementById('password').value;
 
     if(username && email && password){
-        window.location.href= 'index.html'
+        window.location.href= 'home.html'
         alert('Sign in successful!')
     }
     else if(username && email && !password){
